@@ -1,2 +1,2 @@
 # 2nd-ML100Days
-My homework aboud and ML 100days
+My homework about 2nd ML 100days
