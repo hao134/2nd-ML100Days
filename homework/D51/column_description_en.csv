@@ -1,0 +1,8 @@
+Column,Description
+User_id,User id
+Merchant_id,shop/merchant id
+Coupon_id,"Coupon id. If it is null, it means the transaction is without any coupon."
+Discount_rate,"Discount rate, [0,1] means ratio of discount. x:y means discount y dollars after item over x dollars."
+Distance,"Distance between users' most active regions and merchant/shop. (x * 500m) 0 means disance less than 500m, 10 means larger than 5km."
+Date_received,Coupon received date.
+Date,"Date of transaction. (If date is null and coupon id is not nul, mean the transaction is done without using coupon; if date is not null and coupon_id is null, means normal transaction. If date is not null and coupon_id is not null, means the transaction is done with using coupon."

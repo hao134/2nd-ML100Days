@@ -1,0 +1,8 @@
+Column,Description
+User_id,用戶 ID
+Merchant_id,商家 ID
+Coupon_id,優惠券 ID (null 代表無優惠券消費)
+Discount_rate,"優惠券折價：[0,1] 代表折扣率；x:y 代表滿 x 減 y 元"
+Distance,"用戶經常活動地點離商家最近距離 (x * 500 公尺), 0 表示低於 500 公尺, 10 表示大於 5 公里。"
+Date_received,優惠券取得時間
+Date,"購買商品時間 (如果 Date is null & Coupon_id is not null, 則該紀錄為有優惠券但未使用; 若為 Date is not null & Coupon_id is null, 則為普通消費日期; 若 Date is not null & Coupon_id is not null, 則表示優惠券消費日期)"
